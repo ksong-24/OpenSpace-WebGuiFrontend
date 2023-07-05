@@ -1,0 +1,92 @@
+@import "../../styles/all";
+
+.Picker {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: $button-padding;
+  text-shadow: 0 1px 10px rgba(#000, 0.5);
+
+  &:hover,
+  &:focus {
+    background: $ui-background-hover;
+    outline: none;
+    text-shadow: none;
+  }
+
+  &.Active {
+    background: $ui-background;
+
+    &:hover {
+      background: $ui-background-hover;
+    }
+  }
+}
+
+.Icon {
+  font-size: 2em;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.7));
+  padding-bottom: 3px;
+  width: 30px;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+}
+
+.Name {
+  font-size: 1.2rem;
+  height: 21px;
+  line-height: 1;
+}
+
+.Wrapper {
+  position: relative;
+}
+
+.Popover {
+  bottom: unquote("calc(100% + #{$popover-arrow-size})");
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  min-width: 864px;
+  max-width: 864px;
+  height: 666px;
+  z-index: 15;
+}
+
+.DisabledBlue {
+  background-color: darken(rgba($blue, .7), 20%);
+  &:hover {
+    background-color: darken(rgba($blue, .7), 20%);
+  }
+}
+
+.DisabledOrange {
+  background-color: rgba($orange, .7);
+  &:hover {
+    background-color: rgba($orange, .7);
+  }
+}
+
+.Blue {
+  background-color: $blue;
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.Orange {
+  background-color: $orange;
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.Red {
+  background-color: $red;
+  &:hover {
+    background-color: $red;
+  }
+}

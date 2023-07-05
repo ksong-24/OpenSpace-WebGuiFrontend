@@ -15,6 +15,7 @@ import ActionsPanel from './ActionsPanel';
 import ExoplanetsPanel from './ExoplanetsPanel';
 import FlightControlPanel from './FlightControlPanel';
 import GeoPositionPanel from './GeoPositionPanel';
+import QuartoPanel from './QuartoPanel';
 import ScreenSpaceRenderablePanel from './ScreenSpaceRenderablePanel';
 import SessionRec from './SessionRec';
 import SkyBrowserPanel from './SkyBrowserPanel';
@@ -65,6 +66,7 @@ export default function BottomBar({
       {showFlightController && <FlightControlPanel />}
       {showSkyBrowser && <SkyBrowserPanel />}
       {showMissions && <Missions />}
+      <QuartoPanel />
     </div>
   );
 }
