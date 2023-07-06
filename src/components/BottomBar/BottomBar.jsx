@@ -58,6 +58,7 @@ export default function BottomBar({
     <div className={styles.BottomBar}>
       <OriginPicker />
       <TimePicker />
+      <QuartoPanel />
       <SessionRec />
       <GeoPositionPanel />
       <ScreenSpaceRenderablePanel />
@@ -66,7 +67,6 @@ export default function BottomBar({
       {showFlightController && <FlightControlPanel />}
       {showSkyBrowser && <SkyBrowserPanel />}
       {showMissions && <Missions />}
-      <QuartoPanel />
     </div>
   );
 }
